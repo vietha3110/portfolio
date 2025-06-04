@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet');
 @import "tailwindcss";
+
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --loading-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .48) 49.48%, rgba(255, 255, 255, 0) 100%);
+  --color-orange-50: #FF9933;
+  --color-blue-100: #5A7EDC; 
+  --color-blue-600: #003399;
+  --color-orange-100: #FF9933;
+  --color-brown-100: #660000;
+  --color-purple-300: #3E35AB;
+  --color-yealow-100: #FFFF00;
 }
 
 @theme inline {
@@ -22,5 +33,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"Arimo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+
 }
