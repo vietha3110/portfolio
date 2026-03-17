@@ -14,6 +14,15 @@
   --color-brown-100: #660000;
   --color-purple-300: #3E35AB;
   --color-yealow-100: #FFFF00;
+  --color-blue-800:  #081BCB;
+  --color-blue-500:#0062EA;
+  --color-red-300: #FF3300 ;
+  --color-custom-green: linear-gradient(180deg, #509d4f 0%, #499e47 69.2%, #48b347 100%);
+  --color-blue-400: #3C95F3;
+}
+@theme {
+
+
 }
 
 @theme inline {
@@ -34,5 +43,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family:"Arimo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
 
+@keyframes playerBarBounce {
+  0%   { height: 6px; }
+  100% { height: 56px; }
+}
+
+.player-bar-animate {
+  animation: playerBarBounce infinite alternate ease-in-out;
 }
