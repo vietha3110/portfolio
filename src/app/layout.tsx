@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import {Arimo } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 
@@ -27,6 +29,8 @@ export default function RootLayout({
         className={`${arimo.variable}  antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
